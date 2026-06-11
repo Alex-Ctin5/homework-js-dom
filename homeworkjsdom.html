@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog de Note</title>
+    <link rel="stylesheet" href="homeworkjsdom.css">
+    <script src="homeworkjsdom.js" defer></script>
+</head>
+<body>
+
+    <h1 class="main-title">CATALOG DE NOTE</h1>
+
+    <div id="lista_elevi_wrapper">
+        <form id="form_elev">
+            <input type="text" id="nume_elev" placeholder="Adaugati noul student" required>
+            <button type="submit">Adauga</button>
+        </form>
+
+        <div class="sort-buttons">
+            <button id="sort_elevi_asc">Sortare crescatoare</button>
+            <button id="sort_elevi_desc">Sortare descrescatoare</button>
+        </div>
+
+        <table id="tabel_elevi">
+            <thead>
+                <tr>
+                    <th>Nume</th>
+                    <th>Medie note</th>
+                    <th>Note student</th>
+                    <th>Sterge student</th>
+                </tr>
+            </thead>
+            <tbody>
+                </tbody>
+        </table>
+    </div>
+
+    <div id="note_elev_wrapper">
+        <button id="btn_ascunde">Ascunde notele</button>
+        
+        <p id="nume_elev_selectat">Note student : <span>-</span></p>
+
+        <form id="form_nota">
+            <input type="number" id="valoare_nota" min="1" max="10" placeholder="Introduceti nota" required>
+            <button type="submit">Adauga nota studentului</button>
+        </form>
+
+        <div class="sort-buttons">
+            <button id="sort_note_asc">Sortare crescatoare</button>
+            <button id="sort_note_desc">Sortare descrescatoare</button>
+        </div>
+
+        <table id="tabel_note">
+            <thead>
+                <tr>
+                    <th>Note</th>
+                    <th>X</th>
+                </tr>
+            </thead>
+            <tbody>
+                </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
